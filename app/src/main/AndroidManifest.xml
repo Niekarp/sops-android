@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sops">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".views.products.ProductsCompanyProductsActivity"
+            android:label="@string/activity_title_products_company_products"></activity>
+        <activity
+            android:name=".views.products.ProductsActivity"
+            android:label="@string/activity_title_products"/>
+        <activity
+            android:name=".views.myProducts.MyProductsActivity"
+            android:label="@string/title_activity_my_products"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.company.CompanyProductDetails"
+            android:label="@string/activity_title_company_product_details" />
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.sops.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".views.scan.ScanActivity"
+            android:label="@string/activity_title_scan" />
+        <activity
+            android:name=".views.company.CompanyActivity"
+            android:label="@string/title_activity_company"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.profile.ProfileActivity"
+            android:label="@string/activity_title_profile" />
+        <activity
+            android:name=".views.home.HomeActivity"
+            android:label="@string/activity_title_home" />
+        <activity
+            android:name=".views.login.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
