@@ -22,9 +22,9 @@ Android, Architecture Components, Picasso, Dagger 2, Room, Retrofit
 
 ## Gallery
 
-<img src="readme images/login.png" height="700px">
-<img src="readme images/home.png" height="700px">
-<img src="readme images/add.png" height="700px">
-<img src="readme images/list.png" height="700px">
-<img src="readme images/details.png" height="700px">
-<img src="readme images/company.png" height="700px">
+<img src="readme images/login.png" height="700px" align="left">
+<img src="readme images/home.png" height="700px" align="left">
+<img src="readme images/add.png" height="700px" align="left">
+<img src="readme images/list.png" height="700px" align="left">
+<img src="readme images/details.png" height="700px" align="left">
+<img src="readme images/company.png" height="700px" align="left">
